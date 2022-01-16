@@ -16,4 +16,8 @@ RINKEBY_ENDPOINT=
 //You get factory address after running `node ethereum/deploy.js` from root folder
 FACTORY_ADDRESS = 
 
+Do `npm run test` to test the contract.
+
 ##Frontend Ongoing
+
+>Used ReactJS for frontend, solidity for smart contracts and mocha to test the contracts.
