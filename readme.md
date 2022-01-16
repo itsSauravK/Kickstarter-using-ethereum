@@ -1,6 +1,6 @@
-#Ethereum project with ReactJS frontend
+# Ethereum project with ReactJS frontend
 
-##Instructions to run the project
+## Instructions to run the project
 
 `npm i` at the root folder
 
