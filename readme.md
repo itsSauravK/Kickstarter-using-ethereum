@@ -18,6 +18,6 @@ FACTORY_ADDRESS =
 
 Do `npm run test` to test the contract.
 
-##Frontend Ongoing
+### Frontend Ongoing
 
 >Used ReactJS for frontend, solidity for smart contracts and mocha to test the contracts.
