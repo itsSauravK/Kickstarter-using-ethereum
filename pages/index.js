@@ -1,12 +1,40 @@
 import React from 'react';
 import {useState, useEffect} from 'react';
+import { Card, Button } from 'semantic-ui-react';
 import factory from '../ethereum/factory';
+import Layout from '../components/Layout';
 
 function CampaignIndex({campaigns}){
    
+        //function in map run 1 time for every element
+    const items = campaigns.map(address => {
+        return{
+            header: address,
+            description: <a>View Campaigns</a>,
+            fluid: true
+        }
+    });
+
+
     return(
-        <h1> {campaigns[0]}
-        </h1>
+        <Layout>
+            <link
+                async
+                rel="stylesheet"
+                href="https://cdn.jsdelivr.net/npm/semantic-ui@2/dist/semantic.min.css"
+            />
+            <script src="https://cdn.jsdelivr.net/npm/semantic-ui-react/dist/umd/semantic-ui-react.min.js"></script>
+            <h1>Open Campaigns </h1>
+            
+
+            <Button
+                floated = "right"
+                content = "Create Campaign"
+                icon = "add circle"
+                primary
+            />  
+            <Card.Group items={items} />
+        </Layout>
     )
 };
 
