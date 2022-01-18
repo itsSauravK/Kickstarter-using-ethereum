@@ -42,6 +42,6 @@ function CampaignIndex({campaigns}){
 CampaignIndex.getInitialProps = async () => {
     const campaigns = await factory.methods.getDeployedCampaigns().call();
     return { campaigns };
-  };
+  }; 
 
   export default CampaignIndex;
