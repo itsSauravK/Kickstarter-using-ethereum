@@ -1,18 +1,25 @@
 import {Menu} from 'semantic-ui-react'
-
+import {Link} from '../route'
 function Header () {
     return(
         <Menu style={{marginTop:'10px'}}>
-            <Menu.Item>
+            <Link route ='/ '>
+                <a className="item">
                 CrowdCoin
-            </Menu.Item>
+                </a>
+            </Link>
             <Menu.Menu position = "right">
-                <Menu.Item>
+                <Link route ='/'>
+                    <a className="item">
                     Campaigns
-                </Menu.Item>
-                <Menu.Item>
-                    +
-                </Menu.Item>
+                    </a>
+                </Link>
+                <Link route = "/campaign/new">
+                    <a className="item">
+                        +
+                    </a>
+                    
+                </Link>
             </Menu.Menu>
         </Menu>
     );
