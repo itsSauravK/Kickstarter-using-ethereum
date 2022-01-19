@@ -40,7 +40,7 @@ function ContributeForm({address}){
                     labelPosition="right"
                 />
                 <Message error header="Something went wrong" content={errMsg} />
-                <Button primary style={{marginTop:'10px'}}>
+                <Button loading={loading} primary style={{marginTop:'10px'}}>
                     Contribute
                 </Button>
                 
